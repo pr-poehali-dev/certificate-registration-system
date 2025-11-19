@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Auth from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
+import Register from "./pages/Register";
 import Pricing from "./pages/Pricing";
 import Verify from "./pages/Verify";
 import FAQ from "./pages/FAQ";
@@ -36,6 +37,7 @@ const App = () => {
               <Route path="/" element={<Home />} />
               <Route path="/auth" element={<Auth />} />
               <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/register" element={<Register />} />
               <Route path="/pricing" element={<Pricing />} />
               <Route path="/verify" element={<Verify />} />
               <Route path="/faq" element={<FAQ />} />

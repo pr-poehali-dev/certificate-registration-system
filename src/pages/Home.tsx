@@ -6,32 +6,32 @@ import { Link } from 'react-router-dom';
 export default function Home() {
   const features = [
     {
-      icon: 'Lock',
-      title: 'Максимальная безопасность',
-      description: 'Блокчейн-технологии и шифрование данных гарантируют защиту ваших документов',
+      icon: 'Shield',
+      title: 'Закрепление прав',
+      description: 'Фиксация даты начала использования и подтверждение приоритета применения бренда',
     },
     {
-      icon: 'Zap',
-      title: 'Мгновенная регистрация',
-      description: 'Автоматизированная обработка документов за считанные минуты',
+      icon: 'Clock',
+      title: 'Быстрая регистрация',
+      description: 'Включение в реестр за несколько минут — быстрее, чем регистрация товарного знака',
     },
     {
-      icon: 'CheckCircle',
-      title: 'Юридическая значимость',
-      description: 'Сертификаты имеют полную юридическую силу и признаются официально',
+      icon: 'FileCheck',
+      title: 'Юридическая защита',
+      description: 'Доказательство приоритета по п.6 ст.1252 ГК РФ при судебных спорах',
     },
     {
       icon: 'Globe',
-      title: 'Доступ 24/7',
-      description: 'Управляйте документами из любой точки мира в любое время',
+      title: 'Публичный доступ',
+      description: 'Информация о вашем обозначении доступна для проверки третьими лицами',
     },
   ];
 
   const stats = [
-    { value: '50K+', label: 'Активных пользователей' },
-    { value: '200K+', label: 'Выданных сертификатов' },
-    { value: '99.9%', label: 'Аптайм системы' },
-    { value: '<2 мин', label: 'Среднее время обработки' },
+    { value: '250₽', label: 'Стоимость в месяц' },
+    { value: '2550₽', label: 'При оплате за год' },
+    { value: '6-8 мес', label: 'Срок регистрации ТЗ' },
+    { value: '<5 мин', label: 'Включение в реестр' },
   ];
 
   return (
@@ -44,31 +44,31 @@ export default function Home() {
           <div className="max-w-4xl mx-auto text-center animate-fade-in">
             <div className="inline-block mb-6">
               <div className="px-6 py-2 glass-card rounded-full border border-primary/50 animate-pulse-glow">
-                <span className="text-primary text-sm font-semibold">🚀 Инновационная платформа регистрации</span>
+                <span className="text-primary text-sm font-semibold">🚀 Официальный реестр коммерческих обозначений</span>
               </div>
             </div>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6 glow-cyan leading-tight">
-              Цифровые сертификаты
+              Реестр коммерческих
               <br />
-              <span className="text-secondary glow-purple">нового поколения</span>
+              <span className="text-secondary glow-purple">обозначений России</span>
             </h1>
             
             <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto">
-              Защищённая регистрация, моментальная верификация и полный контроль над вашими документами в одной системе
+              Закрепите права на ваш бренд и зафиксируйте дату начала использования. Защита приоритета быстрее, чем регистрация товарного знака.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link to="/auth">
+              <Link to="/register">
                 <Button size="lg" className="text-lg px-8 py-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity animate-pulse-glow">
                   <Icon name="Rocket" size={24} className="mr-2" />
-                  Начать регистрацию
+                  Включить в реестр
                 </Button>
               </Link>
               <Link to="/verify">
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary/50 hover:bg-primary/10">
                   <Icon name="Search" size={24} className="mr-2" />
-                  Проверить сертификат
+                  Проверить обозначение
                 </Button>
               </Link>
             </div>
@@ -99,10 +99,10 @@ export default function Home() {
 
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 glow-cyan">
-              Почему выбирают нас
+              Зачем включать в реестр
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Передовые технологии для максимальной защиты и удобства
+              Защита прав на коммерческое обозначение согласно ГК РФ
             </p>
           </div>
 
@@ -134,15 +134,15 @@ export default function Home() {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 glow-cyan">
-              Готовы начать?
+              Защитите свой бренд сейчас
             </h2>
             <p className="text-xl text-muted-foreground mb-10">
-              Присоединяйтесь к тысячам пользователей, доверяющих нашей платформе
+              Зафиксируйте дату начала использования до того, как это сделает конкурент
             </p>
-            <Link to="/auth">
+            <Link to="/register">
               <Button size="lg" className="text-lg px-12 py-6 bg-gradient-to-r from-primary to-secondary hover:opacity-90 transition-opacity animate-pulse-glow">
                 <Icon name="ArrowRight" size={24} className="mr-2" />
-                Зарегистрироваться бесплатно
+                Включить в реестр — 250₽/мес
               </Button>
             </Link>
           </div>
